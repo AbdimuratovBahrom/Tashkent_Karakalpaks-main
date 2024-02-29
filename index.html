@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/1672269431_flomaster-club-p-uzori-narodov-risunki-instagram-9.jpg">
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./css/js/center.js"></script>
+  <link rel="stylesheet" href="./css/fonts/">
+  <link rel="stylesheet" href="./css/fonts/stylesheet.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+
+  <title>-Ташкент каракалпаклари-</title>
+</head>
+
+<body>
+
+  <header data-aos="fade-down" data-aos-duration="3000" class="header">
+    <div class="container header__container">
+      <button class="header__burger-btn" id="burger"><span></span><span></span><span></span></button>
+      <a href="#!" class="logo">
+        <h5>Т</h5>
+        <div class="logo__imgs">
+          <div class="logo__logo">
+            <div class="logo__hat">
+              <img src="./images/new-year/christmas__hat.png" alt="">
+            </div>
+            <img src="./images/logo1.jpg" alt="">
+          </div>
+        </div>
+        <h5>К</h5>
+      </a>
+
+      <nav class="menu">
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="./index.html"> <span>Главная</span></a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./galeray.html">Галерея</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./about__us.html">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a target="_blank" class="menu__link" href="https://kknews.uz/">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./birthbay.html">День рождения</a>
+          </li>
+          <li class="menu__item">
+            <a target="_blank" class="menu__link"
+              href="https://calendar.yandex.ru/embed/month?&layer_ids=25968400&tz_id=Asia/Tashkent&layer_names=Мой календарь"
+              width="800" height="450">Календарь</a>
+          </li>
+
+        </ul>
+
+      </nav>
+      <div class="nav__buttons">
+        <button class="btn1" id="open-modal-btn">Регистрация</button>
+
+        <button class="btn2" id="open-modal2-btn2">Войти</button>
+
+
+
+
+      </div>
+
+    </div>
+  </header>
+
+  <section class="inter">
+    <div class="container">
+
+      <div class="center">
+
+
+        <h5> Сегодня:</h5>
+
+        <script>
+          document.write(date + " ");
+          document.write(thismonth + " " + thisyear + " " + "года" + " — " + DayofWeek);
+        </script>
+        (<span id="clockdat" style="color:rgb(224, 123, 28);"></span>)
+        </span>
+      </div>
+
+
+      <div class="modal" id="my-modal">
+        <div class="modal__box">
+          <button class="my-close-btn" id="close-my-modal-btn">
+            <p>X</p>
+          </button>
+
+          <h2>Введите свои данные</h2>
+
+          <div class="form__box">
+
+            <form action=""><input type="text" id="Your Name" name="Your Name" placeholder="Ваше имя" required>
+              <input type="text" id="Your Sirname" name="Your Last name" placeholder="Ваше фамилия" required>
+              <input type="email" id="Email" placeholder="Ваш email">
+
+              <input type="tel" id="phone" name="telphone" placeholder="+998(__)___-__-__"
+                pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" maxlength="13"
+                title="14 digits code" required />
+
+
+              <div class="form__button">
+                <button>Зарегистрироваться</button>
+              </div>
+            </form>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+
+      <div class="modal2" id="my-modal2">
+        <div class="modal2__box">
+          <button class="my-close2-btn2" id="close2-my-modal2-btn2">
+            <p>X</p>
+          </button>
+
+          <h2>Введите свои данные</h2>
+
+          <div class="form__box">
+
+            <form action="">
+              <input type="email" id="Email" placeholder="Ваш email">
+
+              <input type="tel" id="phone" name="telphone" placeholder="+998(__)___-__-__"
+                pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" maxlength="13"
+                title="14 digits code" required />
+
+              <div class="password_box">
+                <input type="password" id="password-input" placeholder="Введите пароль" name="password"
+                  autocomplete="on" minlength="6" maxlength="16" required>
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+              </div>
+              <div class="form__button">
+                <button>Войти</button>
+              </div>
+            </form>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+    </div>
+  </section>
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider__box">
+
+        <div class="slider__block">
+
+
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./images/image1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/image2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image9.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image10.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image11.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image12.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image13.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image14.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image15.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image16.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="carousel"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <section class="cards">
+    <div class="container">
+      <div class="carousel__block--text">
+
+        <h2 data-aos="fade-down-right" data-aos-duration="1000"> Жасасын !!! </h2>
+
+        <div data-aos="fade-up-left" data-aos-duration="2000" class="blue">
+          <div class="colors__flag">
+            <p>
+              Биз аз шығармыз, бирақ көптеймиз,<br>
+              Он жигитлеп жүз жигитке татыймыз,<br>
+              Бир журтлар бар суў бойында жылайды,<br>
+              Ал биз сахрада да нан тауып жеймиз...
+            </p>
+            <div class="red">
+              <p>
+                _________________________________
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-down-right" data-aos-duration="3000" class="yollow">
+            <p>
+              Миллион жыл жасасын Қарақалпағым,<br>
+              Шыңларға жаңласын кийели атың,<br>
+              Алдыға басабер! Тассын куўатың!<br>
+              Тилегим, сүреним "жасасын"! деймиз.
+            </p>
+
+          </div>
+          <div class="red">
+            <p>
+              _________________________________
+            </p>
+          </div>
+
+          <div class="green">
+            <p>
+              Қыдықлап самаллар ескендей елпи,<br>
+              Әссалам дегеннен басланар күлки,<br>
+              Хәзиллесип жүриу елимниң көрки,<br>
+              Бәрхәма усылай күлип жүргеймиз!
+            </p>
+
+          </div>
+        </div>
+
+
+
+        <div class="artist"> <a target="_blank" href="#!">(Ереке Бесқалалы)</a></div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <section class="celander">
+    <div class="container">
+      <div class="celander__block">
+        <div class="celander__box">
+          <iframe
+            src="https://calendar.yandex.ru/embed/month?&layer_ids=25968400&tz_id=Asia/Tashkent&layer_names=Мой календарь"
+            width="800" height="450" frameborder="0" style="border: 1px solid #eee"></iframe>
+          <p>По секретному адресу можно посмотреть все события календаря, даже если нет прав доступа. <a target="_blank"
+              href="https://calendar.yandex.ru/embed/month?private_token=4b515f6ef279c29124764571a9caf3a47627994f&tz_id=Asia/Tashkent">Календарь</a>
+          </p>
+        </div>
+        <div class="chetchic">
+          <!--LiveInternet counter--><a href="https://www.liveinternet.ru/click" target="_blank"><img id="licnt61C0"
+              width="88" height="120" style="border:0"
+              title="LiveInternet: показано количество просмотров и посетителей"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt="" /></a>
+          <script>(function (d, s) {
+              d.getElementById("licnt61C0").src =
+                "https://counter.yadro.ru/hit?t29.15;r" + escape(d.referrer) +
+                ((typeof (s) == "undefined") ? "" : ";s" + s.width + "*" + s.height + "*" +
+                  (s.colorDepth ? s.colorDepth : s.pixelDepth)) + ";u" + escape(d.URL) +
+                ";h" + escape(d.title.substring(0, 150)) + ";" + Math.random()
+            })
+              (document, screen)</script><!--/LiveInternet-->
+
+
+
+          <img src="http://0.0.0.0:8080/update_count?id=1" alt="" </div>
+
+
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <script src="./css/js/aos.js"></script>
+  <script src="./css/js/aos-script.js"></script>
+  <script src="./css/js/bootstrap.bundle.min.js"></script>
+  <script src="./css/js/look-password.js"></script>
+  <script deter src="./css/js/modal.js"></script>
+  <script deter src="./css/js/modal2.js"></script>
+  <script src="./css/js/main.js"></script>
+
+</body>
+
+</html>

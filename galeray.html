@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/1672269431_flomaster-club-p-uzori-narodov-risunki-instagram-9.jpg" />
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <script src="./css/js/center.js"></script>
+  <link rel="stylesheet" href="./css/fonts/">
+  <link rel="stylesheet" href="./css/fonts/stylesheet.css">
+  <link rel="stylesheet" href="./css/galeray.css" />
+
+  <title>Galeray</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <button class="header__burger-btn" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#!" class="logo">
+        <h5>Т</h5>
+        <div class="logo__imgs">
+
+          <img src="./images/logo1.jpg" alt="">
+
+        </div>
+        <h5>К</h5>
+      </a>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="./index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./galeray.html"><span>Галерея</span></a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./about__us.html">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://kknews.uz/" target="_blank">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./birthbay.html">День рождения</a>
+          </li>
+          <li class="menu__item">
+            <a target="_blank" class="menu__link"
+              href="https://calendar.yandex.ru/embed/month?&layer_ids=25968400&tz_id=Asia/Tashkent&layer_names=Мой календарь"
+              width="800" height="450">Календарь</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav__buttons">
+        <button class="btn1" id="open-modal-btn">Регистрация</button>
+
+        <button class="btn2" id="open-modal2-btn2">Войти</button>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="carousel__section">
+    <div class="container">
+      <div class="galeray_row">
+        <div class="center">
+
+
+          <h5> Сегодня:</h5>
+
+          <script>
+            document.write(date + " ");
+            document.write(thismonth + " " + thisyear + " " + "года" + " — " + DayofWeek);
+          </script>
+          (<span id="clockdat" style="color:rgb(224, 123, 28);"></span>)
+          </span>
+        </div>
+
+
+        <div class="modal" id="my-modal">
+          <div class="modal__box">
+            <button class="my-close-btn" id="close-my-modal-btn">
+              <p>X</p>
+            </button>
+
+            <h2>Введите свои данные</h2>
+
+            <div class="form__box">
+
+              <form action=""><input type="text" id="Your Name" name="Your Name" placeholder="Ваше имя" required>
+                <input type="text" id="Your Sirname" name="Your Last name" placeholder="Ваше фамилия" required>
+                <input type="email" id="Email" placeholder="Ваш email">
+
+                <input type="tel" id="phone" name="telphone" placeholder="+998(__)___-__-__"
+                  pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})"
+                  maxlength="13" title="14 digits code" required />
+
+                <div class="form__button">
+                  <button>Зарегистрироваться</button>
+                </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+
+        <div class="modal2" id="my-modal2">
+          <div class="modal2__box">
+            <button class="my-close2-btn2" id="close2-my-modal2-btn2">
+              <p>X</p>
+            </button>
+
+            <h2>Введите свои данные</h2>
+
+            <div class="form__box">
+
+              <form action="">
+                <input type="email" id="Email" placeholder="Ваш email">
+
+                <input type="tel" id="phone" name="telphone" placeholder="+998(__)___-__-__"
+                  pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})"
+                  maxlength="13" title="14 digits code" required />
+
+                <div class="password_box">
+                  <input type="password" id="password-input" placeholder="Введите пароль" name="password"
+                    autocomplete="on" minlength="6" maxlength="16" required>
+                  <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                </div>
+                <div class="form__button">
+                  <button>Войти</button>
+                </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+        <h1>Галерея</h1>
+      </div>
+
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./images/image1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/image2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image3.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image4.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image5.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image6.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image7.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image8.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image9.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image10.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image11.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image12.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image13.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image14.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image15.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image16.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/image17.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image18.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image19.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image20.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image21.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image22.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image23.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image24.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image25.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image26.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image27.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image28.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image29.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image30.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image31.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image32.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image33.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image34.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image35.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image36.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image37.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image38.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image39.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image40.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image41.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image42.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image43.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image44.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image45.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image46.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image47.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image48.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image49.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image50.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image51.jpg" class="d-block w-100" alt="..." />
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="carousel"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="carousel"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+
+
+
+
+      <div class="carousel__text">
+        <h1 data-aos="fade-down-right" data-aos-duration="2000"></h1>
+        <p data-aos="fade-up-left" data-aos-duration="2000">Архив фото:<span><a target="_blank"
+              href="https://drive.google.com/drive/folders/1fkTe5cq5YvLN53lG-GlejX4H6wtRJw5F?usp=sharing">
+              https://drive.google.com/drive/folders/1fkTe5cq5YvLN53lG-GlejX4H6wtRJw5F?usp=sharing</a></span>
+
+        </p>
+        <button data-aos="zoom-in-down" data-aos-duration="2000"><a target="_blank"
+            href="https://drive.google.com/drive/folders/1fkTe5cq5YvLN53lG-GlejX4H6wtRJw5F?usp=sharing"> Архив фото</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="videos">
+    <div class="container">
+      <div id="video__block" class="video__block">
+        <video data-aos="zoom-out-right" data-aos-duration="3000" class="video1" width="500" height="340" controls>
+          <source src="./images/video1.mp4" type="" />
+        </video>
+
+        <video data-aos="zoom-out-left" data-aos-duration="3000" class="video1" width="500" height="340" controls>
+          <source src="./images/video2.mp4" type="" />
+        </video>
+
+        <video data-aos="zoom-out-right" data-aos-duration="3000" class="video1" width="500" height="281" controls>
+          <source src="./images/video3.mp4" type="" />
+        </video>
+        <video data-aos="zoom-out-left" data-aos-duration="3000" class="video1" width="500" height="281" controls>
+          <source src="./images/video4.mp4" type="" />
+        </video>
+      </div>
+
+      <section class="slider__foto">
+        <div class="wrapper">
+          <h1>Галерея</h1>
+
+          <div class="gallery-wrap">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+            <div class="item item-5"></div>
+          </div>
+
+          <h2>Галерея</h2>
+
+          <div class="gallery-wrap-row">
+            <div class="item item-6"></div>
+            <div class="item item-7"></div>
+            <div class="item item-8"></div>
+            <div class="item item-9"></div>
+            <div class="item item-10"></div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <div class="chetchic">
+        <!--LiveInternet counter--><a href="https://www.liveinternet.ru/click" target="_blank"><img id="licnt61C0"
+            width="88" height="120" style="border:0" title="LiveInternet: показано количество просмотров и посетителей"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt="" /></a>
+        <script>(function (d, s) {
+            d.getElementById("licnt61C0").src =
+              "https://counter.yadro.ru/hit?t29.15;r" + escape(d.referrer) +
+              ((typeof (s) == "undefined") ? "" : ";s" + s.width + "*" + s.height + "*" +
+                (s.colorDepth ? s.colorDepth : s.pixelDepth)) + ";u" + escape(d.URL) +
+              ";h" + escape(d.title.substring(0, 150)) + ";" + Math.random()
+          })
+            (document, screen)</script><!--/LiveInternet-->
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="./css/js/aos.js"></script>
+  <script src="./css/js/aos-script.js"></script>
+  <script src="./css/js/bootstrap.bundle.min.js"></script>
+  <script src="./css/js/look-password.js"></script>
+  <script deter src="./css/js/modal.js"></script>
+  <script deter src="./css/js/modal2.js"></script>
+  <script src="./css/js/main.js"></script>
+
+</body>
+
+</html>
